@@ -20,6 +20,17 @@ public class TextController : MonoBehaviour {
 	
 	// Update is called once per frame 
 	void Update () {
+        /**
+        switch (myState) {
+            case States.cell:
+                cell();
+                break;
+            case States.sheets_0:
+                sheets_0();
+                break;
+            default:
+                break;
+        }*/
 		print (myState);
 		if 		(myState == States.cell) 			{cell();} 
 		else if (myState == States.sheets_0) 		{sheets_0();}
@@ -29,15 +40,15 @@ public class TextController : MonoBehaviour {
 		else if (myState == States.grate) 			{grate();}
 		else if (myState == States.cell_grate) 		{cell_grate();}
 		else if (myState == States.corridor_0) 		{corridor_0();}
-		else if (myState == States.corridor_1) 		{corridor_1();}
-		else if (myState == States.corridor_2) 		{corridor_2();}
-		else if (myState == States.corridor_3) 		{corridor_3();}
-		else if (myState == States.stairs_0) 		{stairs_0();}
-		else if (myState == States.stairs_1) 		{stairs_1();}
-		else if (myState == States.stairs_2) 		{stairs_2();}
+		//else if (myState == States.corridor_1) 		{corridor_1();}
+		//else if (myState == States.corridor_2) 		{corridor_2();}
+		//else if (myState == States.corridor_3) 		{corridor_3();}
+		//else if (myState == States.stairs_0) 		{stairs_0();}
+		//else if (myState == States.stairs_1) 		{stairs_1();}
+		//else if (myState == States.stairs_2) 		{stairs_2();}
 		else if (myState == States.floor) 			{floor();}
-		else if (myState == States.closet_door) 	{closet_door();}
-		else if (myState == States.in_closet) 		{in_closet();}
+		//else if (myState == States.closet_door) 	{closet_door();}
+		//else if (myState == States.in_closet) 		{in_closet();}
 		
 	}	
 	
