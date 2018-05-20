@@ -5,7 +5,6 @@ using System.Collections;
 public class TextController : MonoBehaviour {
 
 	public Text text;
-	
 	private enum States {
 		cell, sheets_0, grate, lock_0, sheets_1, cell_grate, lock_1,
 		corridor_0, corridor_1, corridor_2, corridor_3, stairs_0, 
@@ -20,37 +19,42 @@ public class TextController : MonoBehaviour {
 	
 	// Update is called once per frame 
 	void Update () {
-        /**
-        switch (myState) {
-            case States.cell:
-                cell();
-                break;
-            case States.sheets_0:
-                sheets_0();
-                break;
-            default:
-                break;
-        }*/
-		print (myState);
-		if 		(myState == States.cell) 			{cell();} 
-		else if (myState == States.sheets_0) 		{sheets_0();}
-		else if (myState == States.sheets_1) 		{sheets_1();}
-		else if (myState == States.lock_0) 			{lock_0();}
-		else if (myState == States.lock_1) 			{lock_1();}
-		else if (myState == States.grate) 			{grate();}
-		else if (myState == States.cell_grate) 		{cell_grate();}
-		else if (myState == States.corridor_0) 		{corridor_0();}
-		//else if (myState == States.corridor_1) 		{corridor_1();}
-		//else if (myState == States.corridor_2) 		{corridor_2();}
-		//else if (myState == States.corridor_3) 		{corridor_3();}
-		//else if (myState == States.stairs_0) 		{stairs_0();}
-		//else if (myState == States.stairs_1) 		{stairs_1();}
-		//else if (myState == States.stairs_2) 		{stairs_2();}
-		else if (myState == States.floor) 			{floor();}
-		//else if (myState == States.closet_door) 	{closet_door();}
-		//else if (myState == States.in_closet) 		{in_closet();}
+      	 updateRoomState ();
+    }
 		
-	}	
+	private void updateRoomState(){
+		switch (myState) {
+			case States.cell:
+				cell();
+				break;
+			case States.sheets_0:
+				sheets_0();
+				break;
+			case States.sheets_1:
+				sheets_1();
+				break;
+			case States.lock_0:
+				lock_0();
+				break;
+			case States.lock_1:
+				lock_1();
+				break;
+			case States.grate:
+				grate();
+				break;
+			case States.cell_grate:
+				cell_grate();
+				break;
+			case States.corridor_0:
+				corridor_0();
+				break;
+			case States.floor:
+				floor();
+				break;
+			default:
+				break;
+			}
+	}
 	
 	
 	void cell () {
