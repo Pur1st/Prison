@@ -5,7 +5,8 @@
 /[Bb]uilds/
 /[Dd]elete/
 /Assets/AssetStoreTools*
-
+/[Pp]rojectSettings/
+/[Pp]ackges/
 # Visual Studio 2015 cache directory
 /.vs/
 
