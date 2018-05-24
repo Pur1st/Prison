@@ -23,6 +23,7 @@ public class TextController : MonoBehaviour {
     }
 		
 	private void updateRoomState(){
+	
 		switch (myState) {
 			case States.cell:
 				cell();
@@ -57,8 +58,9 @@ public class TextController : MonoBehaviour {
 			case States.corridor_3:
 				corridor_3();
 				break;
-				case States.floor:
+			case States.floor:
 				floor();
+				break;
 			case States.stairs_0:
 				stairs_0();
 				break;
@@ -81,7 +83,6 @@ public class TextController : MonoBehaviour {
 				break;
 			}
 	}
-	
 	
 	void cell () {
 		text.text = "You wake up in a dimly lit cell." + 
@@ -195,6 +196,7 @@ public class TextController : MonoBehaviour {
 		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
 		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
 	}
+	
 	void stairs_0 () {
 		text.text = "You start to climb the stairs and hear" + 
 					" footsteps just ahead of the staircase." +
@@ -233,6 +235,7 @@ public class TextController : MonoBehaviour {
 		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
 		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
 	}
+	
 	void closet_door () {
 		text.text = "Sweet glory-hole, You are free..." + 
 					" from that cell... not out of the fire yet." +
