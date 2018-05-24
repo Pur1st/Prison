@@ -8,7 +8,7 @@ public class TextController : MonoBehaviour {
 	private enum States {
 		cell, sheets_0, grate, lock_0, sheets_1, cell_grate, lock_1,
 		corridor_0, corridor_1, corridor_2, corridor_3, stairs_0, 
-		stairs_1, stairs_2, floor, closet_door, in_closet   
+		stairs_1, stairs_2, floor, closet_door, in_closet, courtyard   
 		};
 	private States myState;
 	
@@ -48,8 +48,34 @@ public class TextController : MonoBehaviour {
 			case States.corridor_0:
 				corridor_0();
 				break;
-			case States.floor:
+			case States.corridor_1:
+				corridor_1();
+				break;
+			case States.corridor_2:
+				corridor_2();
+				break;
+			case States.corridor_3:
+				corridor_3();
+				break;
+				case States.floor:
 				floor();
+			case States.stairs_0:
+				stairs_0();
+				break;
+			case States.stairs_1:
+				stairs_1();
+				break;
+			case States.stairs_2:
+				stairs_2();
+				break;
+			case States.closet_door:
+				closet_door();
+				break;
+			case States.in_closet:
+				in_closet();
+				break;
+			case States.courtyard:
+				courtyard();
 				break;
 			default:
 				break;
@@ -116,8 +142,7 @@ public class TextController : MonoBehaviour {
 	
 	void cell_grate () {
 		text.text = "You contimplate stabbing your own throat when you decide " + 
-					" there may be a better use for this sharp piece of grate." + 
-					" \n\n"  +  
+					" there may be a better use for this sharp piece of grate.\n\n" + 
 					" Press (S) to check the sheets" +
 					" or press (L) and Look at the Lock." ; 
 		if (Input.GetKeyDown(KeyCode.S)) 			{myState = States.sheets_1;}
@@ -125,6 +150,29 @@ public class TextController : MonoBehaviour {
 	}
 	
 	void corridor_0 () {
+		text.text = "Sweet glory-hole, You are free..." + 
+					" from that cell... not out of the fire yet." +
+					" You see a set of stairs but hear strange sounds coming from that direction"  +
+					" Ahead you see a closet but can also spot and object laying on the floor" +
+					" You take a moment to decide...\n\n" +  
+					" Press (S) to go upstairs, (C) to check the closet and (F) to check floor" ; 
+		if (Input.GetKeyDown(KeyCode.S)) 				{myState = States.stairs_0;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.closet_door;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.in_closet;}
+	}
+	
+	void corridor_1 () {
+		text.text = "Back in the corridor You spot the same object on the floor..." + 
+					" Now that you think about it the closet door is." +
+					" still there too.."  +
+					" You take a moment to decide\n\n" +  
+					" Press (S) to go upstairs, (C) to check the closet and (F) to check floor" ; 
+		if (Input.GetKeyDown(KeyCode.S)) 				{myState = States.stairs_1;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.closet_door;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.in_closet;}	
+	}
+		
+	void corridor_2 () {
 		text.text = "Sweet glory-hole, You are free..." + 
 					" from that cell... not out of the fire yet." +
 					" You see a set of stairs but hear strange groans coming from that direction"  +
@@ -136,9 +184,9 @@ public class TextController : MonoBehaviour {
 		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
 	}
 	
-	void floor () {
-		text.text = "You find hair-pin that looks sharp enough to poke an eye out" + 
-					" lets hope it doesnt come to that..." +
+	void corridor_3 () {
+		text.text = "Sweet glory-hole, You are free..." + 
+					" from that cell... not out of the fire yet." +
 					" You see a set of stairs but hear strange groans coming from that direction"  +
 					" Ahead you see a closet but can also spot and object laying on the floor" +
 					" You take a moment to decide\n\n" +  
@@ -147,5 +195,78 @@ public class TextController : MonoBehaviour {
 		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
 		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
 	}
-
+	void stairs_0 () {
+		text.text = "You start to climb the stairs and hear" + 
+					" footsteps just ahead of the staircase." +
+					" Not the best choice of the three...\n\n"  +   
+					" Press (R) to return to the corridor" ; 
+		if (Input.GetKeyDown(KeyCode.R)) 				{myState = States.corridor_1;}
+	}
+	
+	void stairs_1 () {
+		text.text = "Why am I back here..." + 
+				    " It is waaaay to scary...\n\n" +
+					" Press (R) to go upstairs, (C) to check the closet and (F) to check floor" ; 
+		if (Input.GetKeyDown(KeyCode.R)) 				{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}	
+	}
+	
+	void stairs_2 () {
+		text.text = "For Christ sake I am not going up there." + 
+					" I'm not wearing my shitting pants!" +
+					" You take a moment to decide\n\n" +  
+					" Press (R) to go back to the corridor" ; 
+		if (Input.GetKeyDown(KeyCode.S)) 				{myState = States.corridor_2;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
+	}
+	
+	void floor () {
+		text.text = "You find hair-pin that looks sharp enough to poke an eye out" + 
+					" lets hope it doesnt come to that..." +
+					" You see a set of stairs but STILL hear strange sounds coming from that direction"  +
+					" Ahead you see a closet" +
+					" You take a moment to decide\n\n" +  
+					" Press (S) to go upstairs, (C) to check the closet and" ; 
+		if (Input.GetKeyDown(KeyCode.C)) 				{myState = States.in_closet;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
+	}
+	void closet_door () {
+		text.text = "Sweet glory-hole, You are free..." + 
+					" from that cell... not out of the fire yet." +
+					" You see a set of stairs but hear strange groans coming from that direction"  +
+					" Ahead you see a closet but can also spot and object laying on the floor" +
+					" You take a moment to decide\n\n" +  
+					" Press (S) to go upstairs, (C) to check the closet and (F) to check floor" ; 
+		if (Input.GetKeyDown(KeyCode.S)) 				{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
+	}
+	
+	void in_closet () {
+		text.text = "Sweet glory-hole, You are free..." + 
+					" from that cell... not out of the fire yet." +
+					" You see a set of stairs but hear strange groans coming from that direction"  +
+					" Ahead you see a closet but can also spot and object laying on the floor" +
+					" You take a moment to decide\n\n" +  
+					" Press (S) to go upstairs, (C) to check the closet and (F) to check floor" ; 
+		if (Input.GetKeyDown(KeyCode.S)) 				{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
+	}
+	
+	void courtyard () {
+		text.text = "Sweet glory-hole, You are free..." + 
+					" from that cell... not out of the fire yet." +
+					" You see a set of stairs but hear strange groans coming from that direction"  +
+					" Ahead you see a closet but can also spot and object laying on the floor" +
+					" You take a moment to decide\n\n" +  
+					" Press (S) to go upstairs, (C) to check the closet and (F) to check floor" ; 
+		if (Input.GetKeyDown(KeyCode.S)) 				{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.C)) 			{myState = States.cell;}
+		else if (Input.GetKeyDown(KeyCode.F)) 			{myState = States.cell;}
+	}
+	
 }
