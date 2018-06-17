@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d3212f5-9100-4766-9e5e-9eea08ae9736" name="Default" comment="" />
+    <list default="true" id="6d3212f5-9100-4766-9e5e-9eea08ae9736" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Cell Again.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Cell Again.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Cell Grate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Cell Grate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Cell Room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Cell Room.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Closet door locked.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Closet door locked.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Closet door open.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Closet door open.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Corridor 0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Corridor 0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Corridor 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Corridor 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Corridor 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Corridor 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Courtyard W_C.Outfit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Courtyard W_C.Outfit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Death Grinder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Death Grinder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Dungeon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Dungeon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Floor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Grate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Grate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Lock 0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Lock 0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Lock 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Lock 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Sheets 0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Sheets 0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Sheets 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Sheets 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Stairs 0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Stairs 0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Stairs 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Stairs 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/Stairs 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/Stairs 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room Prefabs/W_O Courtyard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Room Prefabs/W_O Courtyard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,12 +33,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TextController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TextController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+            <state relative-caret-position="193">
+              <caret line="176" column="75" selection-start-line="173" selection-start-column="21" selection-end-line="178" selection-end-column="98" />
               <folding>
                 <marker date="1527660170630" expanded="false" signature="6:66" ph="..." />
                 <marker date="1527660170630" expanded="true" signature="112:10699" ph="{...}" />
@@ -65,22 +88,22 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="771" />
-    <option name="y" value="143" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2552" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -129,11 +152,12 @@
       <updated>1528182497269</updated>
       <workItem from="1528182499286" duration="58000" />
       <workItem from="1528182581907" duration="468000" />
+      <workItem from="1529222048887" duration="629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="526000" />
+    <option name="totallyTimeSpent" value="1155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -145,17 +169,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="771" y="143" width="1400" height="1000" extended-state="0" />
+    <frame x="2552" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32946634" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.3198198" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21088019" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -167,9 +191,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,8 +206,43 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TextController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="1411">
           <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+          <folding>
+            <marker date="1527660170630" expanded="false" signature="6:66" ph="..." />
+            <marker date="1527660170630" expanded="true" signature="112:10699" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="155:362" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="438:467" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="523:558" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="593:1642" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="616:1639" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="1659:2318" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="2341:2716" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="2739:3240" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="3259:3592" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="3613:3857" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="3876:4143" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="4162:4596" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="4614:5028" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="5053:5653" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="5676:6172" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="6196:6802" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="6825:7431" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="7452:7734" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="7755:7954" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="7975:8222" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="8240:8809" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="8833:9439" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="9461:10067" ph="{...}" />
+            <marker date="1527660170630" expanded="true" signature="10089:10695" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TextController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="176" column="75" selection-start-line="173" selection-start-column="21" selection-end-line="178" selection-end-column="98" />
           <folding>
             <marker date="1527660170630" expanded="false" signature="6:66" ph="..." />
             <marker date="1527660170630" expanded="true" signature="112:10699" ph="{...}" />
